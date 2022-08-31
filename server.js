@@ -46,6 +46,7 @@ app.get('/', async function (req, res) {
 //             error=>{
 //                   res.json(error)
 //       });
+	
 });
 
 // PORT INTIALIZATION CONFIG
