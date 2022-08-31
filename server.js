@@ -40,12 +40,12 @@ app.get('/', async function (req, res) {
        res.json(error)
    })
 	
-      usersModel.findAll({raw: true}).then(response => {
-            res.json(response)
-      }).catch(
-            error=>{
-                  res.json(error)
-      });
+//       usersModel.findAll({raw: true}).then(response => {
+//             res.json(response)
+//       }).catch(
+//             error=>{
+//                   res.json(error)
+//       });
 });
 
 // PORT INTIALIZATION CONFIG
