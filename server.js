@@ -30,15 +30,16 @@ app.use(express.urlencoded({
 
 app.get('/', async function (req, res) {
 
-//   usersModel.create({
-//       first_name:'JOHN DOE',
-//       last_name:'KAMAU',
-//       password:'TEST1234'
-//   }).then(response =>{
-//         res.json(response)
-//   }).catch(error=>{
-//       res.json(error)
-//   })
+   usersModel.create({
+      first_name:'JOHN DOE',
+       last_name:'KAMAU',
+       password:'TEST1234'
+   }).then(response =>{
+         res.json(response)
+   }).catch(error=>{
+       res.json(error)
+   })
+	
       usersModel.findAll({raw: true}).then(response => {
             res.json(response)
       }).catch(
